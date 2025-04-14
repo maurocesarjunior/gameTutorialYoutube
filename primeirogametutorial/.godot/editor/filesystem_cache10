@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744657636
+::res://::1744671544
 icon.svg::CompressedTexture2D/CompressedTexture2D::7026325839343516469::1744575246::1744575259::1::::<><><>0<>0<>f0c68608686fdd15d75f2d95e736b639<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://actors/::1744657557
-player.tscn::PackedScene::5111879806675505182::1744657557::0::1::::<><><>0<>0<><>::uid://ckhw7nit7nnuc::::res://scripts/player.gd<>uid://derw8k40suxyd::::res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png
+::res://actors/::1744657773
+player.tscn::PackedScene::5111879806675505182::1744657773::0::1::::<><><>0<>0<><>::uid://ckhw7nit7nnuc::::res://scripts/player.gd<>uid://derw8k40suxyd::::res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png
 ::res://assets/::1744575565
 ::res://assets/Mini FX, Items & UI/::1744575542
 ::res://assets/Mini FX, Items & UI/Mini FX, Items & UI/::1744575543
@@ -140,7 +140,7 @@ Claw_Animations (16 x 16).png::CompressedTexture2D/CompressedTexture2D::25042606
 Hurt (32 x 32).png::CompressedTexture2D/CompressedTexture2D::5692026803047500718::1744575551::1744575608::1::::<><><>0<>0<>0d23a11acb5fd5c9db1ab34885d52cf3<>res://.godot/imported/Hurt (32 x 32).png-149970c85497ad9a1ba50c5288500cb8.ctex::
 Movement_(Flip_image_back_and_forth) (32 x 32).png::CompressedTexture2D/CompressedTexture2D::43423724365244790::1744575551::1744575608::1::::<><><>0<>0<>300e73f72a3daba860ce555e4645a0f8<>res://.godot/imported/Movement_(Flip_image_back_and_forth) (32 x 32).png-397ff270f03dc12437ca829cc2ee3d7b.ctex::
 Reaching_to_Pinch (32 x 32).png::CompressedTexture2D/CompressedTexture2D::4597484529001517870::1744575551::1744575608::1::::<><><>0<>0<>6a7fb2504916e4fa6028c85c00522f85<>res://.godot/imported/Reaching_to_Pinch (32 x 32).png-a8b7ce44f946e572913104c102e264ad.ctex::
-::res://levels/::1744657607
-world_01.tscn::PackedScene::1892090670687968055::1744657607::0::1::::<><><>0<>0<><>::uid://xcoga6hev0ui::::res://assets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png<>uid://cgbgsfxqcuf8a::::res://assets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png<>uid://ce3h6ccunrvk5::::res://actors/player.tscn
+::res://levels/::1744657793
+world_01.tscn::PackedScene::1892090670687968055::1744657793::0::1::::<><><>0<>0<><>::uid://xcoga6hev0ui::::res://assets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png<>uid://cgbgsfxqcuf8a::::res://assets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png<>uid://ce3h6ccunrvk5::::res://actors/player.tscn
 ::res://scripts/::1744618381
 player.gd::GDScript/GDScript::5490574063359312934::1744618381::0::1::::<>CharacterBody2D<><>0<>0<><>::

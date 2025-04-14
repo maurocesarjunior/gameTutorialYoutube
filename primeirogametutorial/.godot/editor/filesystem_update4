@@ -1,2 +1,4 @@
-res://levels/world_01.tscn
 res://actors/player.tscn
+res://levels/world_01.tscn
+res://scripts/player.gd
+res://shaders/movimentclouds.gdshader
