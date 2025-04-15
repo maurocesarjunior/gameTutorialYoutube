@@ -1,20 +1,20 @@
 [gd_scene load_steps=14 format=3 uid="uid://ce3h6ccunrvk5"]
 
 [ext_resource type="Script" uid="uid://ckhw7nit7nnuc" path="res://scripts/player.gd" id="1_mvpqy"]
-[ext_resource type="Texture2D" uid="uid://derw8k40suxyd" path="res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png" id="2_1yqc4"]
-[ext_resource type="Texture2D" uid="uid://b5s3e8eo3k34a" path="res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/Jumping (32 x 32).png" id="3_esgq3"]
+[ext_resource type="Texture2D" uid="uid://dcxbqdnd8ee2h" path="res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/NiraIdle.png" id="2_esgq3"]
+[ext_resource type="Texture2D" uid="uid://7qmd4vh4pa4b" path="res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/NiraJump.png" id="3_esgq3"]
 [ext_resource type="Texture2D" uid="uid://dbciccnqj0wof" path="res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/Running (32 x 32).png" id="4_kjkj0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o58wf"]
 size = Vector2(16, 14)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dtykb"]
-atlas = ExtResource("2_1yqc4")
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjkj0"]
+atlas = ExtResource("2_esgq3")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wu64i"]
-atlas = ExtResource("2_1yqc4")
-region = Rect2(32, 0, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkwqa"]
+atlas = ExtResource("2_esgq3")
+region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tue77"]
 atlas = ExtResource("3_esgq3")
@@ -39,11 +39,11 @@ region = Rect2(96, 0, 32, 32)
 [sub_resource type="SpriteFrames" id="SpriteFrames_naeyk"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dtykb")
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_kjkj0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wu64i")
+"texture": SubResource("AtlasTexture_rkwqa")
 }],
 "loop": true,
 "name": &"idle",
@@ -92,8 +92,7 @@ limit_left = 0
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_naeyk")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.109548
 
 [node name="animator" type="AnimationPlayer" parent="."]
