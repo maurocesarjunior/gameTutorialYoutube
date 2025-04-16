@@ -1,5 +1,6 @@
 res://shaders/movimentclouds.gdshader
-res://prefabs/move_plataform.tscn
-res://scripts/move_plataform.gd
 res://levels/world_01.tscn
 res://actors/player.tscn
+res://prefabs/move_plataform.tscn
+res://prefabs/coin.tscn
+res://scripts/coin.gd
