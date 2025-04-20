@@ -5,7 +5,4 @@ res://prefabs/move_plataform.tscn
 res://prefabs/coin.tscn
 res://prefabs/hitbox.tscn
 res://actors/enemy_2.tscn
-res://scripts/hitbox.gd
-res://scripts/enemy_2.gd
 res://scripts/player.gd
-res://scripts/world_01.gd

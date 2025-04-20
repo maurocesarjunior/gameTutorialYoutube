@@ -83,7 +83,7 @@ script = ExtResource("1_mvpqy")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_naeyk")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -100,5 +100,15 @@ collision_mask = 4
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_esgq3")
 debug_color = Color(0.921677, 0.147941, 0.587228, 0.42)
+
+[node name="ray_right" type="RayCast2D" parent="."]
+position = Vector2(8, 4)
+target_position = Vector2(4, 0)
+collision_mask = 4
+
+[node name="ray_left" type="RayCast2D" parent="."]
+position = Vector2(-8, 4)
+target_position = Vector2(-4, 0)
+collision_mask = 4
 
 [connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]
