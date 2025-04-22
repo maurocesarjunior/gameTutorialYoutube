@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdc7p0qa08yxk"]
+
+[ext_resource type="Script" uid="uid://cmbmyg3ao147p" path="res://scripts/box_pieces.gd" id="1_li7nh"]
+
+[node name="box_pieces" type="RigidBody2D"]
+mass = 0.257
+gravity_scale = 4.836
+can_sleep = false
+linear_damp = 0.1
+angular_damp = 0.1
+script = ExtResource("1_li7nh")
+
+[node name="texture" type="Sprite2D" parent="."]
+
+[node name="notifier" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="notifier" to="." method="_on_notifier_screen_exited"]

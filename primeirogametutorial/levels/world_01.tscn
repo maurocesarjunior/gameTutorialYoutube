@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://17spsglbo77x"]
+[gd_scene load_steps=25 format=3 uid="uid://17spsglbo77x"]
 
 [ext_resource type="Texture2D" uid="uid://xcoga6hev0ui" path="res://assets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_naeyk"]
 [ext_resource type="Script" uid="uid://dvmpdphbtvvn7" path="res://scripts/world_01.gd" id="1_samdc"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://j0fl6pd1b6v0" path="res://assets/Extras/ui_buttons_arrow_right_PRESSED.png" id="17_athp7"]
 [ext_resource type="Texture2D" uid="uid://dnr2luh15as4q" path="res://assets/Extras/ui_buttons_arrow_up_NORMAL.png" id="18_dl4q8"]
 [ext_resource type="Texture2D" uid="uid://dylmkvo47vmto" path="res://assets/Extras/ui_buttons_arrow_up_PRESSED.png" id="19_8drao"]
+[ext_resource type="PackedScene" uid="uid://bbutysi1pw8ji" path="res://prefabs/break_box.tscn" id="20_8drao"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j8rs1"]
 texture = ExtResource("1_naeyk")
@@ -256,3 +257,12 @@ scale = Vector2(2.25, 2.25)
 texture_normal = ExtResource("18_dl4q8")
 texture_pressed = ExtResource("19_8drao")
 action = "ui_accept"
+
+[node name="break_box" parent="." instance=ExtResource("20_8drao")]
+position = Vector2(304, 136)
+
+[node name="break_box2" parent="." instance=ExtResource("20_8drao")]
+position = Vector2(368, 104)
+
+[node name="break_box3" parent="." instance=ExtResource("20_8drao")]
+position = Vector2(384, 104)

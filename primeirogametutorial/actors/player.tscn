@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ce3h6ccunrvk5"]
+[gd_scene load_steps=16 format=3 uid="uid://ce3h6ccunrvk5"]
 
 [ext_resource type="Script" uid="uid://ckhw7nit7nnuc" path="res://scripts/player.gd" id="1_mvpqy"]
 [ext_resource type="Texture2D" uid="uid://dcxbqdnd8ee2h" path="res://assets/Sprite Pack 2/Sprite Pack 2/2 - Mr. Mochi/NiraIdle.png" id="2_esgq3"]
@@ -83,16 +83,19 @@ size = Vector2(16, 23)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_esgq3"]
 size = Vector2(18, 23)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjkj0"]
+size = Vector2(20, 6)
+
 [node name="player" type="CharacterBody2D"]
 position = Vector2(0, -17)
-collision_mask = 22
+collision_mask = 94
 script = ExtResource("1_mvpqy")
 
 [node name="Remote" type="RemoteTransform2D" parent="."]
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_naeyk")
-animation = &"hurt"
+animation = &"jump"
 autoplay = "idle"
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -120,4 +123,13 @@ position = Vector2(-8, 4)
 target_position = Vector2(-4, 0)
 collision_mask = 4
 
+[node name="head_collider" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 64
+
+[node name="head_collision" type="CollisionShape2D" parent="head_collider"]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_kjkj0")
+
 [connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]
+[connection signal="body_entered" from="head_collider" to="." method="_on_head_collider_body_entered"]

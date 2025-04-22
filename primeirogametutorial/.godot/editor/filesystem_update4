@@ -5,4 +5,8 @@ res://prefabs/move_plataform.tscn
 res://prefabs/coin.tscn
 res://prefabs/hitbox.tscn
 res://actors/enemy_2.tscn
+res://scripts/box_pieces.gd
+res://prefabs/break_box.tscn
+res://scripts/break_box.gd
 res://scripts/player.gd
+res://prefabs/box_pieces.tscn
