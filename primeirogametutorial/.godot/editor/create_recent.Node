@@ -1,8 +1,9 @@
 CollisionShape2D
+RigidBody2D
+Marker2D
 Area2D
 VisibleOnScreenNotifier2D
 Sprite2D
-RigidBody2D
 AnimationPlayer
 CharacterBody2D
 TouchScreenButton
@@ -11,4 +12,3 @@ RayCast2D
 Node2D
 RemoteTransform2D
 AnimatedSprite2D
-AnimatableBody2D

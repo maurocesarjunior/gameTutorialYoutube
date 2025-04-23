@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
 const box_pieces = preload("res://prefabs/box_pieces.tscn")
+const coin_instance = preload("res://prefabs/coin_rigid.tscn")
 
+@onready var spawn_coin := $spawn_coin as Marker2D
 @onready var animation_player := $anim as AnimationPlayer
 @export var pieces : PackedStringArray
 @export var hitpoints := 3
@@ -32,12 +34,12 @@ func break_sprite():
 
 		# Aplica o impulso na peça
 		piece_instance.apply_impulse(Vector2.ZERO, impulse_vector)
-
-		# Adiciona uma rotação mais intensa para mais realismo (espalhando mais)
-		piece_instance.angular_velocity = randf_range(-8.0, 8.0)  # Aumentando a rotação para mais intensidade
-
-		# Configura o modo de ativação da física para garantir que as peças não "durmam"
+		piece_instance.angular_velocity = randf_range(-8.0, 8.0)
 		piece_instance.can_sleep = false
-
-	# Finaliza a caixa original
 	queue_free()
+
+func create_coin():
+	var coin = coin_instance.instantiate()
+	get_parent().call_deferred("add_child", coin)
+	coin.global_position = spawn_coin.global_position
+	coin.apply_impulse(Vector2(randf_range(-50, 50), -255))

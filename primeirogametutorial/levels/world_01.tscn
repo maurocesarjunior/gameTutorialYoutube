@@ -259,10 +259,10 @@ texture_pressed = ExtResource("19_8drao")
 action = "ui_accept"
 
 [node name="break_box" parent="." instance=ExtResource("20_8drao")]
-position = Vector2(304, 136)
+position = Vector2(304, 120)
 
 [node name="break_box2" parent="." instance=ExtResource("20_8drao")]
-position = Vector2(368, 104)
+position = Vector2(368, 88)
 
 [node name="break_box3" parent="." instance=ExtResource("20_8drao")]
-position = Vector2(384, 104)
+position = Vector2(384, 88)
