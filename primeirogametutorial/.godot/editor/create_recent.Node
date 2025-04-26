@@ -1,14 +1,14 @@
+AnimationPlayer
+Timer
 CollisionShape2D
+AnimatableBody2D
 RigidBody2D
 Marker2D
 Area2D
 VisibleOnScreenNotifier2D
 Sprite2D
-AnimationPlayer
 CharacterBody2D
 TouchScreenButton
 CanvasLayer
 RayCast2D
 Node2D
-RemoteTransform2D
-AnimatedSprite2D
