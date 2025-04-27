@@ -1,7 +1,5 @@
-res://shaders/movimentclouds.gdshader
-res://prefabs/fallen_plataform.tscn
 res://levels/world_01.tscn
-res://scripts/fallen_plataform.gd
+res://shaders/movimentclouds.gdshader
 res://prefabs/move_plataform.tscn
 res://prefabs/coin.tscn
 res://prefabs/hitbox.tscn
@@ -10,4 +8,9 @@ res://prefabs/break_box.tscn
 res://prefabs/box_pieces.tscn
 res://actors/player.tscn
 res://prefabs/coin_rigid.tscn
+res://prefabs/fallen_plataform.tscn
+res://prefabs/dialog_box.tscn
+res://scripts/dialog_box.gd
+res://singletons/dialog_manager.gd
+res://scripts/warning_sign.gd
 res://scripts/player.gd
