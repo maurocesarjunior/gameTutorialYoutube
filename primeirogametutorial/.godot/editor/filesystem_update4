@@ -13,4 +13,3 @@ res://prefabs/dialog_box.tscn
 res://scripts/dialog_box.gd
 res://singletons/dialog_manager.gd
 res://scripts/warning_sign.gd
-res://scripts/player.gd
