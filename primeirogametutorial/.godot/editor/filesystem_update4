@@ -1,5 +1,8 @@
-res://levels/world_01.tscn
+res://scripts/coin_rigid.gd
+res://prefabs/coin_rigid.tscn
 res://shaders/movimentclouds.gdshader
+res://levels/world_01.tscn
+res://scripts/spike_area.gd
 res://prefabs/move_plataform.tscn
 res://prefabs/coin.tscn
 res://prefabs/hitbox.tscn
@@ -7,9 +10,6 @@ res://actors/enemy_2.tscn
 res://prefabs/break_box.tscn
 res://prefabs/box_pieces.tscn
 res://actors/player.tscn
-res://prefabs/coin_rigid.tscn
 res://prefabs/fallen_plataform.tscn
 res://prefabs/dialog_box.tscn
-res://scripts/dialog_box.gd
-res://singletons/dialog_manager.gd
-res://scripts/warning_sign.gd
+res://scripts/player.gd
